@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3B3291;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.3s;
+    color: white;
+}
+header nav a.active {
+    background: #5247B9;
+}
+header nav a:hover {
+    background: #5247B9;
+}
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+.home .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+    padding: 50px;
+    background: #3B3291;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.about h1 {
+    font-size: 40px;
+    z-index: 100;
+}
+.title{
+    text-align: center;
+}
+
+.chatbot{
+    position: relative;
+    z-index: 105;
+}
+
+
+</style>
+<body>
+
+    <header>
+        <h1>Team VPY</h1>
+        <nav>
+            <a href="./" class="active">Home</a>
+            <a href="./about">About</a>
+           
+        </nav>
+    </header>
+
+    
+
+    <section class="about">
+        <br><br><br><br>
+        <h1>About Team</h1>
+        <p>Team VPY comprises four dedicated data enthusiasts—Purval Bhude, Yash Malve, Vedant Muske, and Vedant Kasar. Together, we embarked on a datathon journey, dissecting accident data with precision. Our mission? To unravel patterns, predict hotspots, and propose preventive measures. With rigorous analysis and innovative solutions, Team VPY stands at the forefront of enhancing road safety. </p>        <br>
+        
+        
+
+        <div class="container">
+        </section>
+    <br>
+    <br>
+        </div>
+        <div class="chatbot"> <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+            <script src="https://mediafiles.botpress.cloud/555fcf38-e3fe-4d89-bb69-78c3222cee83/webchat/config.js" defer></script>
+            </div>           
+</body>
+</html>
